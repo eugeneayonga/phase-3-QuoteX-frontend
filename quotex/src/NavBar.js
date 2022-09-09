@@ -1,0 +1,22 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+
+function NavBar() {
+    return (
+      <>
+        <div className="navbar">
+          <NavLink to="/">
+            <button className="button">Home</button>
+          </NavLink>
+          <NavLink to="/quotes">
+            <button className="button">Quotes</button>
+          </NavLink>
+          <NavLink to="/formpage">
+            <button className="button">Add New Quotes</button>
+          </NavLink>
+        </div>
+      </>
+    );
+}
+
+export default NavBar;
